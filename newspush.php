@@ -1,6 +1,6 @@
 <?php
 // Put your device token here (without spaces):
-$deviceToken = '9b9b92e1719c3535fdeeaaafd00e8b53cdd9444a3315439ca6a3b7e14dbb21eb';
+$deviceToken = 'OPio92e1719c3535fdeeaaafd00e8b53cdd9444a3315439ca6a3b7e14dbb21eb';
 // Put your private key's passphrase here:
 $passphrase = 'pushcert';
 $message = $argv[1];
@@ -27,7 +27,7 @@ $basicBody['aps'] = array(
 $customBody['custom_json'] = array(
     'saleNumber' => "N09520",
 );
-  
+
 $body = array_merge($basicBody, $customBody);
 // Encode the payload as JSON
 $payload = json_encode($body);
